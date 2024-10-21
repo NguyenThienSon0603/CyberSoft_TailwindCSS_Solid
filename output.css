@@ -686,6 +686,10 @@ video {
   order: 1;
 }
 
+.order-2 {
+  order: 2;
+}
+
 .order-3 {
   order: 3;
 }
@@ -759,6 +763,10 @@ video {
   margin-bottom: 1.75rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -771,8 +779,16 @@ video {
   margin-right: 0.5rem;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-3 {
@@ -785,10 +801,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-60 {
-  margin-top: 15rem;
 }
 
 .inline-block {
@@ -835,12 +847,20 @@ video {
   height: 1.5rem;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-\[25px\] {
   height: 25px;
 }
 
 .h-\[50px\] {
   height: 50px;
+}
+
+.h-\[60px\] {
+  height: 60px;
 }
 
 .h-full {
@@ -899,6 +919,10 @@ video {
   width: 50px;
 }
 
+.w-\[60px\] {
+  width: 60px;
+}
+
 .w-\[90\%\] {
   width: 90%;
 }
@@ -921,6 +945,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -935,6 +963,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-center {
@@ -1069,6 +1101,11 @@ video {
   background-color: rgb(1 107 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#20C5A8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 197 168 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#62E888\] {
   --tw-bg-opacity: 1;
   background-color: rgb(98 232 136 / var(--tw-bg-opacity));
@@ -1087,6 +1124,11 @@ video {
 .bg-\[\#F3F4F6\] {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FBFBFB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#FFDB26\] {
@@ -1187,6 +1229,11 @@ video {
   padding-right: 0.75rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1200,6 +1247,16 @@ video {
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2 {
@@ -1335,6 +1392,10 @@ video {
   opacity: 0;
 }
 
+.opacity-\[0\.5\] {
+  opacity: 0.5;
+}
+
 .shadow-shadow-custom {
   --tw-shadow: 0px 0px 8px -5px #b5a7a7;
   --tw-shadow-colored: 0px 0px 8px -5px var(--tw-shadow-color);
@@ -1382,6 +1443,12 @@ body {
   background-color: #FFF;
 }
 
+.dark-theme #logoSIX,
+.dark-theme #paked div,
+.dark-theme #startup div{
+  background: transparent;
+}
+
 .dark-theme #signup,
 .dark-theme #input-email,
 .dark-theme #trusted{
@@ -1406,7 +1473,10 @@ body {
 .dark-theme #contact-content,
 .dark-theme #footer-start #email,
 .dark-theme #sendmail,
-.dark-theme #features-select {
+.dark-theme #features-select,
+.dark-theme #robust,
+.dark-theme #paked,
+.dark-theme #startup {
   color: #fff;
 }
 
@@ -1432,11 +1502,15 @@ body {
   background: blue;
 }
 
-.dark-theme .text-after::after {
+.dark-theme #robust .text-after::after,
+.dark-theme #faqs .text-after::after,
+.dark-theme #paked .text-after::after,
+.dark-theme #startup .text-after::after {
   background: #46495A;
 }
 
 .dark-theme #contact-content .btn-Click,
+.dark-theme #robust .btn-Click,
 .dark-theme #scaleImg .scale-img,
 .dark-theme #integrations .custom-img{
   background-color: #292E45;
@@ -1450,12 +1524,14 @@ body {
 
 .dark-theme #contact input,
 .dark-theme #contact textarea,
-.dark-theme .pricing-item div.border-b{
+.dark-theme .pricing-item div.border-b,
+.dark-theme #logoSIX{
   border-bottom: 1px solid #344e4266;
 }
 
 .dark-theme #footer-start,
-.dark-theme #footer-end{
+.dark-theme #footer-end,
+.dark-theme #logoSIX{
   border-top: 1px solid #344e4266;
 }
 
@@ -1468,7 +1544,8 @@ body {
 .dark-theme #contact-content,
 .dark-theme #question header,
 .dark-theme #features-select,
-.dark-theme #features-select div p:first-child {
+.dark-theme #features-select div p:first-child,
+.dark-theme #startup .number {
   background: #1C2136;
   border: 1px solid #46495A;
 }
@@ -1519,17 +1596,36 @@ body {
   background-color: rgb(45 49 69 / var(--tw-bg-opacity));
 }
 
+/* Section Logo */
+
+#logoSIX img{
+  opacity: 0.5;
+}
+
+#logoSIX img:hover{
+  opacity: 1;
+}
+
 /* section OUR FAQS */
 
 .text-after::after {
   content: "";
-  background: #FFEAC2;
   position: absolute;
   bottom: 0.65rem;
   left: 0;
   width: 100%;
   z-index: -1;
   height: 0.75rem;
+}
+
+#faqs .text-after::after,
+#paked .text-after::after{
+  background: #FFEAC2;
+}
+
+#robust .text-after::after,
+#startup .text-after::after{
+  background: #ADFFF8;
 }
 
 .btn-MoveRight:hover {
@@ -1788,6 +1884,10 @@ body .cd-top--is-visible{
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
+.hover\:opacity-\[1\]:hover {
+  opacity: 1;
+}
+
 .focus\:outline-blue-700:focus {
   outline-color: #1d4ed8;
 }
@@ -1835,6 +1935,10 @@ body .cd-top--is-visible{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1866,6 +1970,11 @@ body .cd-top--is-visible{
     padding-bottom: 2.5rem;
   }
 
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1878,8 +1987,20 @@ body .cd-top--is-visible{
     margin-right: 2.5rem;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:w-3\/5 {
     width: 60%;
+  }
+
+  .lg\:w-\[40\%\] {
+    width: 40%;
   }
 
   .lg\:w-\[45\%\] {
@@ -1888,6 +2009,10 @@ body .cd-top--is-visible{
 
   .lg\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
   }
 
   .lg\:flex-row {
@@ -1921,6 +2046,16 @@ body .cd-top--is-visible{
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .lg\:px-5 {
@@ -2056,12 +2191,6 @@ body .cd-top--is-visible{
   .xl\:shadow-shadow-clear {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-
-  .xl\:shadow-shadow-custom {
-    --tw-shadow: 0px 0px 8px -5px #b5a7a7;
-    --tw-shadow-colored: 0px 0px 8px -5px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }

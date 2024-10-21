@@ -14,11 +14,18 @@ icon.onclick = function(){
         logofooter.src = "./Image/logo-dark.svg";
         icon.src = "./Image/icon-sun.svg";
         featuresImage.src = "./Image/features-dark-01.svg";
+        robustImage.src = "./Image/hero-dark.svg";
+        pakedImage.src = "./Image/about-dark-02.svg";
+        startupImage.src = "./Image/about-dark-01.webp";
+
     } else {
         logo.src = "./Image/logo-light.svg";
         logofooter.src = "./Image/logo-light.svg";
         icon.src = "./Image/icon-moon.svg";
         featuresImage.src = "./Image/features-light-01.webp";
+        robustImage.src = "./Image/hero-light.svg";
+        pakedImage.src = "./Image/about-light-02.svg";
+        startupImage.src = "./Image/about-light-01.webp";
     }
 }
 
@@ -44,7 +51,7 @@ question.forEach((item, index) => {
         let answer = item.querySelector(".answer");
         let answerDark = item.querySelector(".dark-theme .answer");
         if(item.classList.contains("open")){
-            answer.style.height = "130px";
+            answer.style.height = "150px";
             item.querySelector(".fa-solid").classList.replace("fa-plus","fa-minus");
         }
         else{

@@ -27,6 +27,11 @@ body {
 .dark-theme #iconMenu span{
     background-color: #FFF;
 }
+.dark-theme #logoSIX,
+.dark-theme #paked div,
+.dark-theme #startup div{
+    background: transparent;
+}
 .dark-theme #signup,
 .dark-theme #input-email,
 .dark-theme #trusted{
@@ -49,7 +54,10 @@ body {
 .dark-theme #contact-content,
 .dark-theme #footer-start #email,
 .dark-theme #sendmail,
-.dark-theme #features-select {
+.dark-theme #features-select,
+.dark-theme #robust,
+.dark-theme #paked,
+.dark-theme #startup {
     color: #fff;
 }
 
@@ -75,10 +83,15 @@ body {
     background: blue;
 }
 
-.dark-theme .text-after::after {
+.dark-theme #robust .text-after::after,
+.dark-theme #faqs .text-after::after,
+.dark-theme #paked .text-after::after,
+.dark-theme #startup .text-after::after {
     background: #46495A;
 }
+
 .dark-theme #contact-content .btn-Click,
+.dark-theme #robust .btn-Click,
 .dark-theme #scaleImg .scale-img,
 .dark-theme #integrations .custom-img{
     background-color: #292E45;
@@ -90,11 +103,13 @@ body {
 }
 .dark-theme #contact input,
 .dark-theme #contact textarea,
-.dark-theme .pricing-item div.border-b{
+.dark-theme .pricing-item div.border-b,
+.dark-theme #logoSIX{
     border-bottom: 1px solid #344e4266;
 }
 .dark-theme #footer-start,
-.dark-theme #footer-end{
+.dark-theme #footer-end,
+.dark-theme #logoSIX{
     border-top: 1px solid #344e4266;
 }
 .dark-theme #dropdown_item,
@@ -106,7 +121,8 @@ body {
 .dark-theme #contact-content,
 .dark-theme #question header,
 .dark-theme #features-select,
-.dark-theme #features-select div p:first-child {
+.dark-theme #features-select div p:first-child,
+.dark-theme #startup .number {
     background: #1C2136;
     border: 1px solid #46495A;
 }
@@ -131,16 +147,33 @@ body {
     @apply text-base text-white font-medium no-underline py-3 px-6 bg-[#181c31] hover:bg-[#2D3145] rounded-full text-center cursor-pointer
 }
 
+
+/* Section Logo */
+#logoSIX img{
+    opacity: 0.5;
+}
+#logoSIX img:hover{
+    opacity: 1;
+}
+
+
 /* section OUR FAQS */
 .text-after::after {
     content: "";
-    background: #FFEAC2;
     position: absolute;
     bottom: 0.65rem;
     left: 0;
     width: 100%;
     z-index: -1;
     height: 0.75rem;
+}
+#faqs .text-after::after,
+#paked .text-after::after{
+    background: #FFEAC2;
+}
+#robust .text-after::after,
+#startup .text-after::after{
+    background: #ADFFF8;
 }
 
 .btn-MoveRight:hover {
