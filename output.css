@@ -618,8 +618,20 @@ video {
   bottom: 2rem;
 }
 
+.bottom-\[25px\] {
+  bottom: 25px;
+}
+
+.bottom-\[30px\] {
+  bottom: 30px;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.left-\[-25px\] {
+  left: -25px;
 }
 
 .left-\[-90px\] {
@@ -632,6 +644,10 @@ video {
 
 .right-8 {
   right: 2rem;
+}
+
+.right-\[-10px\] {
+  right: -10px;
 }
 
 .right-\[15px\] {
@@ -791,6 +807,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -845,10 +865,6 @@ video {
 
 .h-6 {
   height: 1.5rem;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
 }
 
 .h-\[25px\] {
@@ -929,6 +945,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 
 .cursor-pointer {
@@ -1505,7 +1525,7 @@ body {
 .dark-theme #robust .text-after::after,
 .dark-theme #faqs .text-after::after,
 .dark-theme #paked .text-after::after,
-.dark-theme #startup .text-after::after {
+.dark-theme #startup .text-after::after{
   background: #46495A;
 }
 
@@ -1545,7 +1565,8 @@ body {
 .dark-theme #question header,
 .dark-theme #features-select,
 .dark-theme #features-select div p:first-child,
-.dark-theme #startup .number {
+.dark-theme #startup .number,
+.dark-theme #solidFeature .item-solidFeature {
   background: #1C2136;
   border: 1px solid #46495A;
 }
@@ -1561,6 +1582,11 @@ body {
 .dark-theme .question:nth-child(1) .answer,
 .dark-theme .question:nth-child(2) .answer {
   border-bottom: 1px solid #46495A;
+}
+
+.dark-theme #solidFeature .item-solidFeature:hover{
+  box-shadow: none;
+  background-color: #252A42;
 }
 
 /* section Join With Us Today & Increase Your Productivity */
@@ -1736,6 +1762,12 @@ body {
   }
 }
 
+/* SOLID FEATURES */
+
+#solidFeature .item-solidFeature:hover{
+  box-shadow: 0px 0px 50px 10px #a1888824;
+}
+
 /* testimonials */
 
 .slide-item {
@@ -1897,6 +1929,10 @@ body .cd-top--is-visible{
     position: absolute;
   }
 
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
   .sm\:w-\[95\%\] {
     width: 95%;
   }
@@ -1989,6 +2025,10 @@ body .cd-top--is-visible{
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:h-\[100vh\] {
+    height: 100vh;
   }
 
   .lg\:w-1\/2 {
@@ -2090,6 +2130,10 @@ body .cd-top--is-visible{
   .xl\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .xl\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .xl\:ml-20 {
